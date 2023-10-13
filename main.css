@@ -1,0 +1,15 @@
+.grid {
+	display: grid;
+	grid-template-columns: repeat(12, 1fr [col]);
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+}
+
+.head { grid-column: 2 / span 5 }
+.title { grid-column: 3 / span 8 }
+.nav { grid-column: 7 / span 5 }
+.body { grid-column: 3 / span 8 }
+.foot { grid-column: 2 / span 10 }
