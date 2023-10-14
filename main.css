@@ -8,8 +8,16 @@
 	flex-direction: column;
 }
 
-.head { grid-column: 2 / span 5 }
-.title { grid-column: 3 / span 8 }
-.nav { grid-column: 7 / span 5 }
-.body { grid-column: 3 / span 8 }
-.foot { grid-column: 2 / span 10 }
+.head { grid-column: 3 / 7; }
+.nav { grid-column: 7 / 10; }
+.body { grid-column: 3 / 10; }
+.foot { grid-column: 2 / 11; }
+
+.title {
+	grid-column: 4 / 10;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr [col2]);
+}
+
+.greeting { grid-column: 2 / 4; }
+.picture { grid-column: 3; }
