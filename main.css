@@ -10,6 +10,36 @@
 	--black: #333333;
 }
 
+/* fonts */
+@font-face {
+	font-family: 'SF-Pro';
+	src: url("fonts/SF-Pro.woff");
+	font-weight: normal;
+}
+@font-face {
+	font-family: 'SF-Medium';
+	src: url("fonts/SF-Medium.woff") format("woff");
+	font-weight: medium;
+}
+@font-face {
+	font-family: 'SF-Bold';
+	src: url("fonts/SF-Bold.woff");
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'SF-Light-Italic';
+	src: url("fonts/SF-Light-Italic.woff");
+	font-weight: light;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'SF-Heavy-Italic';
+	src: url("fonts/SF-Heavy-Italic.woff");
+	font-weight: extra bold;
+	font-style: italic;
+}
+
+
 /* page layout */
 
 	/* grids */
@@ -84,13 +114,34 @@ a:hover {
 	color: var(--peeking-sun-orange);
 }
 
-/* text */
+/* font family and size */
 nav {
 	font-size: 1.2em;
 }
 h1 {
-
+	font-family: 'SF-Bold', sans-serif;
 }
+h2 {
+	font-family: 'SF-Medium', sans-serif;
+}
+h3 {
+	font-family: 'SF-Medium', sans-serif;
+	line-height: 2em;
+}
+h4 {
+	font-family: 'SF-Medium', sans-serif;
+	line-height: 1.5em;
+}
+p, a {
+	font-family: 'SF-Pro', sans-serif;
+	line-height: 1em;
+}
+aside {
+	font-family: 'SF-Pro', sans-serif;
+	line-height: 1em;
+	margin-bottom: 1em;
+}
+
 
 /* images */
 img {
