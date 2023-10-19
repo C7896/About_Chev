@@ -6,7 +6,7 @@
 	--sky-blue: #0099e6;
 	--shadow-blue: #004080;
 	--peeking-sun-orange: #ffcc66;
-	--morning-dew: #009933;
+	--morning-dew: #00e600;
 	--black: #333333;
 }
 
@@ -64,13 +64,13 @@
 	.brand { grid-column: 2 / 6; }
 	.nav { grid-column: 6 / 10; }
 
-	.title {
-		grid-column: 4 / 10;
+	.neck {
+		grid-column: 3 / 11;
 		display: grid;
 		grid-template-columns: repeat(5, 1fr);
 	}
 
-	.greeting { grid-column: 1 / 4; }
+	.title { grid-column: 1 / 4; }
 	.picture { grid-column: 3; }
 
 nav {
@@ -112,6 +112,9 @@ a {
 }
 a:hover {
 	color: var(--peeking-sun-orange);
+}
+mark {
+	background-color: var(--morning-dew);
 }
 
 /* font family and size */
