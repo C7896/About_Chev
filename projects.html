@@ -7,13 +7,19 @@
 		<title>Projects - Chev Kodama</title>
 		<link rel="icon" type="image/x-icon" href="images/symbol.png">
 		<link rel="stylesheet" type="text/css" href="main.css">
+		<script type="text/javascript" src="script.js"></script>
+		<script type="text/javascript">
+			function loadAnimation(canvas, machine) {
+				createRiveAnimation(canvas, machine);
+			}
+		</script>
 	</head>
 
 	<body class="grid">
 		<header class="head">
-			<div class="brand" style="display: inline-flex;">
-				<img src="images/symbol.png" alt="" title="Charly" style="height: 3em; width: 3em" loading="eager">
-				<h2 style="margin-left: 1%">Chev Kodama</h2>
+			<div class="brand" style="display: inline-flex">
+				<a href="more_about_me.html" style="text-decoration-line: none"><img src="images/symbol.png" alt="" title="Charly" style="height: 3em; width: 3em" loading="eager">
+				<h2 style="margin-left: 1%">Chev Kodama</h2></a>
 			</div>
 			<nav class="nav" arialabel="primary navigation">
 				<ul>
@@ -24,10 +30,7 @@
 						<a href="index.html">Home</a>
 					</li>
 					<li>
-						<a href="contact.html">Contact</a>
-					</li>
-					<li>
-						<a href="files.html">Important Stuff</a>
+						<a href="files/resume.pdf" target="_blank">Resume</a>
 					</li>
 				</ul>
 			</nav>
@@ -41,13 +44,10 @@
 			<section>
 				<h2>Quoter</h2>
 				<a href="https://app.flutterflow.io/run/sir1ls7HMgU9NFNuejpK" target="_blank"><img src="images/quoter_logo.jpeg" alt="Quoter: Current Version" title="Quoter" width="200" loading="eager" style="margin-bottom: 15px"></a>
-				<aside>
-					<details>
-						<summary>Project Mission and Vision</summary>
-						<p>Mission: <mark>To integrate mental self-care into everyday life through the gamification of mental wellness practices.</mark></p>
-						<p>Vision: <mark>To deliver the most amount of happiness, peace, and love to the greatest number of people around the world possible.</mark></p>
-					</details>
-				</aside>
+				<h3>Project Mission and Vision</h3>
+				<p>Mission: <mark>To integrate mental self-care into everyday life through the gamification of mental wellness practices.</mark></p>
+				<p>Vision: <mark>To deliver the most amount of happiness, peace, and love to the greatest number of people around the world possible.</mark></p>
+
 				<aside>
 					<details>
 						<summary>Versions</summary>
@@ -58,9 +58,17 @@
 			</section>
 			<section>
 				<h2>My First Rive Animations</h2>
-				<canvas id="riveCanvas" width="500" height="500"></canvas>
-				<script src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
-				<script src="script.js"></script>
+				<!-- Dog -->
+				<canvas id="riveCanvas0" width="250" height="250" onload="loadAnimation('riveCanvas0', 'DogMachine')"></canvas>
+				<script type="text/javascript" src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+
+				<!-- Panda -->
+				<canvas id="riveCanvas1" width="250" height="250" onload="loadAnimation('riveCanvas1', 'PandaPoMachine')"></canvas>
+				<script type="text/javascript" src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+
+				<!-- Cloud -->
+				<canvas id="riveCanvas2" width="250" height="250" onload="loadAnimation('riveCanvas2', 'CloudMachine')"></canvas>
+				<script type="text/javascript" src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
 		</main>
 	</body>
 </html>

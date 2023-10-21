@@ -6,7 +6,7 @@
 	--sky-blue: #0099e6;
 	--shadow-blue: #004080;
 	--peeking-sun-orange: #ffcc66;
-	--morning-dew: #00e600;
+	--morning-dew: #00cc00;
 	--black: #333333;
 }
 
@@ -84,13 +84,17 @@ div {
 	display: flex;
 	align-items: center;
 }
+a {
+	display: inline-flex;
+	align-items: center;
+}
 
 /* color */
 body {
 	background-color: var(--morning-light);
 }
 .head {
-	background-color: var(--clouds);
+	background-color: var(--clouds);;
 }
 h1 {
 	color: var(--striking-sky-blue);
@@ -146,8 +150,14 @@ aside {
 }
 
 
-/* images */
+/* animations and images */
 img {
 	border-radius: 50%;
 	border: 1px solid var(--black);
+}
+canvas {
+	display: inline-flex;
+	border-radius: 20%;
+	border: 1px solid var(--black);
+	margin-right: 20px;
 }
