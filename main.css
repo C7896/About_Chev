@@ -52,9 +52,8 @@
 		display: flex;
 		flex-direction: column;
 	}
-
-	.body { grid-column: 3 / 11; }
-	.foot { grid-column: 2 / 12; }
+	.title { grid-column: 3 / 11; }
+	.full { grid-column: 2 / 12; }
 
 	.head {
 		grid-column: 1 / 13;
@@ -64,25 +63,34 @@
 	.brand { grid-column: 2 / 6; }
 	.nav { grid-column: 6 / 10; }
 
-	.neck {
+
+	.body {
 		grid-column: 3 / 11;
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);
+		grid-template-columns: repeat(8, 1fr);
 	}
-
-	.title { grid-column: 1 / 4; }
-	.picture { grid-column: 3; }
+	.main {
+		grid-column: 1 / 9;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
 
 nav {
 	text-align: right;
 }
 li {
 	display: inline;
-	margin-left: 5%;
+	margin-left: 10%;
 }
 div {
 	display: flex;
 	align-items: center;
+}
+div.h-scroll {
+	background-color: var(--clouds);
+	overflow: auto;
+	white-space: nowrap;
 }
 a {
 	display: inline-flex;
@@ -97,22 +105,22 @@ body {
 	background-color: var(--clouds);;
 }
 h1 {
-	color: var(--striking-sky-blue);
+	color: var(--shadow-blue);
 }
 h2 {
 	color: var(--shadow-blue);
 }
 h3 {
-	color: var(--sky-blue);
+	color: var(--shadow-blue);
 }
 h4 {
-	color: var(--sky-blue);
+	color: var(--shadow-blue);
 }
 p {
-	color: var(--sky-blue);
+	color: var(--shadow-blue);
 }
 a {
-	color: var(--striking-sky-blue);
+	color: var(--shadow-blue);
 }
 a:hover {
 	color: var(--peeking-sun-orange);
@@ -121,7 +129,7 @@ mark {
 	background-color: var(--morning-dew);
 }
 
-/* font family and size */
+/* text decoration */
 nav {
 	font-size: 1.2em;
 }
@@ -139,9 +147,16 @@ h4 {
 	font-family: 'SF-Medium', sans-serif;
 	line-height: 1.5em;
 }
-p, a {
+p {
 	font-family: 'SF-Pro', sans-serif;
+	line-height: 1.5em;
+	font-size: 1.2em;
+}
+a {
+	font-family: 'SF-Bold', sans-serif;
 	line-height: 1em;
+	font-size: 1.4em;
+	text-decoration-line: none;
 }
 aside {
 	font-family: 'SF-Pro', sans-serif;
@@ -150,10 +165,14 @@ aside {
 }
 
 
-/* animations and images */
+/* media */
 img {
-	border-radius: 50%;
+	border-radius: 20%;
 	border: 1px solid var(--black);
+}
+video {
+	border-radius: 20%;
+	filter: brightness(0.7);
 }
 canvas {
 	display: inline-flex;

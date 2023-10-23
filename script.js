@@ -1,4 +1,4 @@
-function createRiveAnimation(canvas, machine)  
+function createRiveAnimation(canvas, machine) {
   const r = new rive.Rive({
     src: "/rive_animations/quoter_icons.riv",
     canvas: document.getElementById(canvas),
@@ -8,3 +8,4 @@ function createRiveAnimation(canvas, machine)
       r.resizeDrawingSurfaceToCanvas();
     },
   });
+}
