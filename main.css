@@ -55,13 +55,26 @@
 	.title { grid-column: 3 / 11; }
 	.full { grid-column: 2 / 12; }
 
-	.head {
+	.head-foot {
 		grid-column: 1 / 13;
 		display: grid;
 		grid-template-columns: repeat(10, 1fr);
 	}
 	.brand { grid-column: 2 / 6; }
 	.nav { grid-column: 6 / 10; }
+	.icons {
+		grid-column: 2 / 10;
+		justify-content: center;
+		position: fixed;
+		bottom: 5%;
+		width: 100%;
+	}
+	.right {
+		grid-column: 10;
+		position: fixed;
+		bottom: 5%;
+		right: 5%;
+	}
 
 
 	.body {
@@ -79,9 +92,22 @@
 nav {
 	text-align: right;
 }
-li {
+ul {
+	padding: 0;
+}
+.icons ul {
+	display: table;
+	position: relative;
+	margins: auto;
+}
+.nav li {
 	display: inline;
 	margin-left: 10%;
+}
+.icons li {
+	display: inline-flex;
+	margin-left: 50px;
+	margin-right: 50px;
 }
 div {
 	display: flex;

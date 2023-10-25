@@ -5,20 +5,20 @@
 		<meta name="Author" content="Chev">
 		<meta name="Description" content="This page contains descriptions of and links to Chev's projects.">
 		<title>Projects - Chev Kodama</title>
-		<link rel="icon" type="image/x-icon" href="images/symbol.png">
+		<link rel="icon" type="image/x-icon" href="icons/symbol.png">
 		<link rel="stylesheet" type="text/css" href="main.css">
-		<script type="text/javascript" src="script.js"></script>
+<!--		<script type="text/javascript" src="script.js"></script>
 		<script type="text/javascript">
 			function loadAnimation(canvas, machine) {
 				createRiveAnimation(canvas, machine);
 			}
-		</script>
+		</script> -->
 	</head>
 
 	<body class="grid">
-		<header class="head">
+		<header class="head-foot">
 			<div class="brand">
-				<a href="more_about_me.html"><img src="images/symbol.png" alt="" title="Charly" style="height: 3em; width: 3em; border-radius: 50%;" loading="eager"></a>
+				<a href="more_about_me.html"><img src="icons/symbol.png" alt="" title="Charly" style="height: 3em; width: 3em; border-radius: 50%;" loading="eager"></a>
 				<h2 style="margin-left: 3%"><a href="more_about_me.html">Chev Kodama</a></h2>
 			</div>
 			<nav class="nav" arialabel="primary navigation">
@@ -43,7 +43,7 @@
 		<main class="body">
 			<section class="full">
 				<h2>Quoter</h2>
-				<a href="https://app.flutterflow.io/run/sir1ls7HMgU9NFNuejpK" target="_blank"><img src="images/quoter_logo.jpeg" alt="Quoter: Current Version" title="Quoter" width="200" loading="eager" style="margin-bottom: 15px; border-radius: 50%;"></a>
+				<a href="https://app.flutterflow.io/run/sir1ls7HMgU9NFNuejpK" target="_blank"><img src="images/quoter_logo.jpg" alt="Quoter Icon" title="Quoter: Current Version" width="200" height="200" loading="eager" style="margin-bottom: 15px; border-radius: 50%;"></a>
 				<h3>Project Mission and Vision</h3>
 				<p>Mission: <mark>To integrate mental self-care into everyday life through the gamification of mental wellness practices.</mark></p>
 				<p>Vision: <mark>To deliver the most amount of happiness, peace, and love to the greatest number of people around the world possible.</mark></p>
@@ -59,16 +59,72 @@
 			<section class="full">
 				<h2>My First Rive Animations</h2>
 				<!-- Dog -->
-				<canvas id="riveCanvas0" width="250" height="250" onload="loadAnimation('riveCanvas0', 'DogMachine')"></canvas>
+<!--				<canvas id="riveCanvas0" width="250" height="250" onload="loadAnimation('riveCanvas0', 'DogMachine')"></canvas> -->
 				<script type="text/javascript" src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+				<script type="text/javascript">
+					const r = new rive.Rive({
+					    src: "/rive_animations/quoter_icons.riv",
+					    canvas: document.getElementById('riveCanvas0'),
+					    autoplay: true,
+					    stateMachines: 'DogMachine',
+					    onLoad: () => {
+					      r.resizeDrawingSurfaceToCanvas();
+					    },
+					  });
+				</script>
 
 				<!-- Panda -->
-				<canvas id="riveCanvas1" width="250" height="250" onload="loadAnimation('riveCanvas1', 'PandaPoMachine')"></canvas>
+<!--				<canvas id="riveCanvas1" width="250" height="250" onload="loadAnimation('riveCanvas1', 'PandaPoMachine')"></canvas> -->
 				<script type="text/javascript" src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+				<script type="text/javascript">
+					const r = new rive.Rive({
+					    src: "/rive_animations/quoter_icons.riv",
+					    canvas: document.getElementById('riveCanvas1'),
+					    autoplay: true,
+					    stateMachines: 'PandaPoMachine',
+					    onLoad: () => {
+					      r.resizeDrawingSurfaceToCanvas();
+					    },
+					  });
+				</script>
 
 				<!-- Cloud -->
-				<canvas id="riveCanvas2" width="250" height="250" onload="loadAnimation('riveCanvas2', 'CloudMachine')"></canvas>
+<!--				<canvas id="riveCanvas2" width="250" height="250" onload="loadAnimation('riveCanvas2', 'CloudMachine')"></canvas> -->
 				<script type="text/javascript" src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
+				<script type="text/javascript">
+					const r = new rive.Rive({
+					    src: "/rive_animations/quoter_icons.riv",
+					    canvas: document.getElementById('riveCanvas2'),
+					    autoplay: true,
+					    stateMachines: 'CloudMachine',
+					    onLoad: () => {
+					      r.resizeDrawingSurfaceToCanvas();
+					    },
+					  });
+				</script>
+			</section>
+
+			<div style="height: 125px"></div>
 		</main>
+
+		<footer class="head-foot">
+			<div class="icons">
+				<ul>
+					<li>
+						<a href="https://linkedin.com/in/chev7896" target="_blank"><img src="icons/drawn-linkedin.png" alt="My LinkedIn" title="linkedin.com/in/chev7896" width="50" height="50" loading="eager" style="border: none;"></a>
+					</li>
+					<li>
+						<a href="https://github.com/C7896" target="_blank"><img src="icons/drawn-github.png" alt="My GitHub" title="github.com/C7896" width="50" height="50" loading="eager" style="border: none;"></a>
+					</li>
+					<li>
+						<a href="mailto:chevkodama@gmail.com" target="_blank"><img src="icons/drawn-gmail.png" alt="My Email" title="chevkodama@gmail.com" width="50" height="50" loading="eager" style="border: none;"></a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="right" style="margin-bottom: 16px">
+				<a href="#"><img src="icons/fancy-up.png" alt="Top" title="Top" width="50" height="50" loading="eager" style="border: none;"></a>
+			</div>
+		</footer>
 	</body>
 </html>
