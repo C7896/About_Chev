@@ -6,7 +6,7 @@
 	--sky-blue: #0099e6;
 	--shadow-blue: #004080;
 	--peeking-sun-orange: #ffcc66;
-	--morning-dew: #00cc00;
+	--morning-dew: #aaff80;
 	--black: #333333;
 }
 
@@ -117,6 +117,7 @@ div.h-scroll {
 	background-color: var(--clouds);
 	overflow: auto;
 	white-space: nowrap;
+	border-radius: 2%;
 }
 a {
 	display: inline-flex;
@@ -196,8 +197,21 @@ img {
 	border-radius: 20%;
 	border: 1px solid var(--black);
 }
+figure img {
+	border-radius: 0%;
+	margin: 0;
+	padding: 0;
+	border-inline: 5px solid var(--black);
+}
+figure {
+	padding: 0;
+	margin: 0;
+}
 video {
-	border-radius: 20%;
+	border-radius: 0%;
+	padding: 0;
+	margin: 0;
+	border-inline: 5px solid var(--black);
 	filter: brightness(0.7);
 }
 canvas {

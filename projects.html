@@ -7,12 +7,6 @@
 		<title>Projects - Chev Kodama</title>
 		<link rel="icon" type="image/x-icon" href="icons/symbol.png">
 		<link rel="stylesheet" type="text/css" href="main.css">
-<!--		<script type="text/javascript" src="script.js"></script>
-		<script type="text/javascript">
-			function loadAnimation(canvas, machine) {
-				createRiveAnimation(canvas, machine);
-			}
-		</script> -->
 	</head>
 
 	<body class="grid">
@@ -59,48 +53,48 @@
 			<section class="full">
 				<h2>My First Rive Animations</h2>
 				<!-- Dog -->
-<!--				<canvas id="riveCanvas0" width="250" height="250" onload="loadAnimation('riveCanvas0', 'DogMachine')"></canvas> -->
+				<canvas id="riveCanvas0" width="250" height="250"></canvas>
 				<script type="text/javascript" src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
 				<script type="text/javascript">
 					const r = new rive.Rive({
 					    src: "/rive_animations/quoter_icons.riv",
-					    canvas: document.getElementById('riveCanvas0'),
+					    canvas: document.getElementById("riveCanvas0"),
 					    autoplay: true,
-					    stateMachines: 'DogMachine',
+					    stateMachines: "DogMachine",
 					    onLoad: () => {
 					      r.resizeDrawingSurfaceToCanvas();
 					    },
-					  });
+					});
 				</script>
 
 				<!-- Panda -->
-<!--				<canvas id="riveCanvas1" width="250" height="250" onload="loadAnimation('riveCanvas1', 'PandaPoMachine')"></canvas> -->
+				<canvas id="riveCanvas1" width="250" height="250"></canvas>
 				<script type="text/javascript" src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
 				<script type="text/javascript">
 					const r = new rive.Rive({
 					    src: "/rive_animations/quoter_icons.riv",
-					    canvas: document.getElementById('riveCanvas1'),
+					    canvas: document.getElementById("riveCanvas1"),
 					    autoplay: true,
-					    stateMachines: 'PandaPoMachine',
+					    stateMachines: "PandaPoMachine",
 					    onLoad: () => {
 					      r.resizeDrawingSurfaceToCanvas();
 					    },
-					  });
+					});
 				</script>
 
 				<!-- Cloud -->
-<!--				<canvas id="riveCanvas2" width="250" height="250" onload="loadAnimation('riveCanvas2', 'CloudMachine')"></canvas> -->
+				<canvas id="riveCanvas2" width="250" height="250"></canvas>
 				<script type="text/javascript" src="https://unpkg.com/@rive-app/canvas@2.1.0"></script>
 				<script type="text/javascript">
 					const r = new rive.Rive({
 					    src: "/rive_animations/quoter_icons.riv",
-					    canvas: document.getElementById('riveCanvas2'),
+					    canvas: document.getElementById("riveCanvas2"),
 					    autoplay: true,
-					    stateMachines: 'CloudMachine',
+					    stateMachines: "CloudMachine",
 					    onLoad: () => {
 					      r.resizeDrawingSurfaceToCanvas();
 					    },
-					  });
+					});
 				</script>
 			</section>
 
